@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<script>
+function validate()
+{
+if(user==null){
+alert("enter email");
+return false;}
+else if(pass==null){
+alert("enter password");
+return false;}
+else if(phone==null){
+alert("enter phone number");
+return false;}
+
+else
+return true;
+}
+</script>
+<div class="content">
+<form onsubmit="validate()">
+Username:<input type="text" name="user"></input><br>
+<br>
+password:<input type="text" name="pass"></input>
+<br>
+cofirm password:<input type="text" name="con"></input><br>
+Phone number:<input type="text" name="phone"></input>
+<br>
+<input type="submit" value="register" ></input>
+</form>
+</body>
+</html>
